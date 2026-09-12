@@ -19,7 +19,7 @@ fun createMockProfile(
     isTwoFactorEnabled: Boolean = false,
     privateKey: String? = "mockPrivateKey-$number",
     accountKeys: AccountKeysJson? = createMockAccountKeysJson(number = number),
-    isPremium: Boolean = false,
+    isPremium: Boolean = true,
     culture: String? = "mockCulture-$number",
     name: String? = "mockName-$number",
     organizations: List<SyncResponseJson.Profile.Organization>? = listOf(
@@ -82,7 +82,7 @@ fun createMockOrganizationNetwork(
     shouldUseDirectory: Boolean = false,
     key: String? = "mockKey-$number",
     providerName: String? = "mockProviderName-$number",
-    shouldUsersGetPremium: Boolean = false,
+    shouldUsersGetPremium: Boolean = true,
     maxStorageGb: UInt? = 1u,
     identifier: String? = "mockIdentifier-$number",
     use2fa: Boolean = false,
